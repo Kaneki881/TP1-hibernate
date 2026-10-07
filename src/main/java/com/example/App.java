@@ -32,11 +32,12 @@ public class App {
             Produit p1 = new Produit("Laptop", new BigDecimal("999.99"));
             Produit p2 = new Produit("Smartphone", new BigDecimal("499.99"));
             Produit p3 = new Produit("Tablette", new BigDecimal("299.99"));
-
+            Produit p4 = new Produit("TV", new BigDecimal("599.99"));
             // Persistance des produits
             em.persist(p1);
             em.persist(p2);
             em.persist(p3);
+            em.persist(p4);
 
             em.getTransaction().commit();
             System.out.println("Produits insérés avec succès !");
