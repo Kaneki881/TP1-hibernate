@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
 @Entity
@@ -15,6 +16,10 @@ public class Produit {
 
     private String nom;
     private BigDecimal prix;
+
+
+    @ManyToOne
+    private Categorie categorie;
 
     // Constructeur par défaut requis par JPA
     public Produit() {
@@ -48,6 +53,14 @@ public class Produit {
 
     public void setPrix(BigDecimal prix) {
         this.prix = prix;
+    }
+
+    public Categorie getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(Categorie categorie) {
+        this.categorie = categorie;
     }
 
     @Override
