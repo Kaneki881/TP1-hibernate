@@ -61,6 +61,7 @@ Because the database lives in memory, all data is lost when the program ends.
 ```bash
 mvn compile exec:java -Dexec.mainClass=com.example.App
 ```
+<img width="1621" height="863" alt="Screenshot 2026-10-07 214954" src="https://github.com/user-attachments/assets/b53ec177-fbad-4d4d-b49b-ed470268c39f" />
 
 Notes:
 
